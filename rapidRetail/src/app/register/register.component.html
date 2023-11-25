@@ -1,0 +1,35 @@
+<!-- <form (ngSubmit)="onSubmit(signUp)" #signUp="ngForm" action="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" [(ngModel)]="user.name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" [(ngModel)]="user.email" required>
+
+  <label for="phone">Phone:</label>
+  <input type="text" id="phone" name="phone" [(ngModel)]="user.phone" required>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" [(ngModel)]="user.password" required>
+  <a routerLink="/update" target="_blank">Update Password</a>
+
+  <button type="submit">Register</button>
+</form>
+ -->
+
+ <form (ngSubmit)="onSubmit(signUp)" #signUp="ngForm" action="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" [(ngModel)]="user.name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" [(ngModel)]="user.email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+
+  <label for="phone">Phone:</label>
+  <input type="text" id="phone" name="phone" [(ngModel)]="user.phone" required pattern="[0-9]{10}">
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" [(ngModel)]="user.password" minlength="8" maxlength="16" required>
+  <a routerLink="/update" target="_blank">Update Password</a>
+
+  <button type="submit">Register</button>
+</form>
+

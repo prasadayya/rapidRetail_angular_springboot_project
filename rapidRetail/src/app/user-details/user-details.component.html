@@ -1,0 +1,32 @@
+<div class="user-details-container">
+    <table class="table">
+         <thead>
+              <tr>
+                   <!-- <th>User ID</th> -->
+                   <th>Name</th>
+                   <th>Email</th>
+                   <th>contact number</th>
+                   <th>Password</th>
+                   <!-- <th>Old Password</th>
+                   <th>New Password</th> -->
+                   <th>Action</th> <!-- New column for action -->
+                   <!-- Add more table headers as needed -->
+              </tr>
+         </thead>
+         <tbody>
+              <tr *ngFor="let user of users">
+                   <!-- <td>{{ user.Id }}</td> -->
+                   <td>{{ user.name }}</td>
+                   <td>{{ user.email }}</td>
+                   <td>{{ user.phone }}</td>
+                   <td>{{user.password}}</td>
+                   <!-- <td>{{ user.oldPassword }}</td>
+                   <td>{{ user.newPassword }}</td> -->
+                   <td>
+                        <button class="btn btn-danger"(click)="deleteUser(user.email)">Delete</button>
+                   </td>
+                   <!-- Add more table data as needed -->
+              </tr>
+         </tbody>
+    </table>
+</div>

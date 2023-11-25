@@ -1,0 +1,156 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="register">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="user-details">All user</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="login">Login</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item">Cars</a></li>
+            <li><a class="dropdown-item">Bike</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sell">Sell</a>
+        </li>
+      </ul>
+      <h2 class="site-name">rapidRetail</h2>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+<section>
+  <div class="card-container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <img [src]="url1" class="card-img-top" alt="product1.jpg">
+          <div class="card-body">
+            <h5 class="card-title">Hyundai</h5>
+            <p class="card-price">₹ 11,00,003</p>
+            <p class="card-text">Hyundai aura T permit petrol cng</p>
+            <a href="#" class="btn btn-primary">connect with seller</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img [src]="url2" class="card-img-top" alt="product2.jpg">
+          <div class="card-body">
+            <h5 class="card-title">Royal Enfield</h5>
+            <p class="card-price">₹ 1,10,000</p>
+            <p class="card-text">Brand Royal Enfield model Thunderbird 350</p>
+            <a href="#" class="btn btn-primary">connect with seller</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img [src]="url3" class="card-img-top" alt="product3.jpg">
+          <div class="card-body">
+            <h5 class="card-title">Honda City</h5>
+            <p class="card-price">₹ 8,99,000</p>
+            <p class="card-text">Accidental: No
+              Vehicle Certified: Yes,
+              Color: Silver</p>
+            <a href="#" class="btn btn-primary">connect with seller</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img [src]="url4" class="card-img-top" alt="product4.jpg">
+          <div class="card-body">
+            <h5 class="card-title">KTM</h5>
+            <p class="card-price">₹ 2,30,000</p>
+            <p class="card-text">Ktm duke 250 bs6 Insurance vaild till 2027</p>
+            <a href="#" class="btn btn-primary">connect with seller</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <img [src]="url5" class="card-img-top" alt="product5.jpg">
+          <div class="card-body">
+            <h5 class="card-title">wagon r</h5>
+            <p class="card-price">₹ 58,000</p>
+            <p class="card-text">T permit car wagon r petrol cng</p>
+            <a href="#" class="btn btn-primary">connect with seller</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img [src]="url6" class="card-img-top" alt="product6.jpg">
+          <div class="card-body">
+            <h5 class="card-title">Honda Civic (2010)</h5>
+            <p class="card-price">₹ 2,55,555</p>
+            <p class="card-text">Honda Civic V 2010 Manual
+              # Km reading is Genuine
+              # Car Is Non-Accidental
+              # 100% No Rusting</p>
+            <a href="#" class="btn btn-primary">connect with seller</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img [src]="url7" class="card-img-top" alt="product7.jpg">
+          <div class="card-body">
+            <h5 class="card-title">Hero</h5>
+            <p class="card-price">₹ 70,000</p>
+            <p class="card-text">All documents clear Untouch bike Power full pickup smooth
+              fairing Avrege 65 </p>
+            <a href="#" class="btn btn-primary">connect with seller</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img [src]="url8" class="card-img-top" alt="product8.jpg">
+          <div class="card-body">
+            <h5 class="card-title">Bajaj</h5>
+            <p class="card-price">₹ 1,35,500</p>
+            <p class="card-text">Bajaj Pulsar N 160 2023</p>
+            <a href="#" class="btn btn-primary">connect with seller</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- <app-register></app-register>
+<app-login></app-login>
+<app-user-details></app-user-details>   -->

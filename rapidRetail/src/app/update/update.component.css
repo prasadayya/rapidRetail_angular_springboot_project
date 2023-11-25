@@ -1,0 +1,48 @@
+/* Add some basic styling to the form */
+form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Style the input fields */
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+/* Style the button */
+button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Optional: Add spacing between elements */
+form > * {
+  margin-bottom: 10px;
+}
+
+/* Optional: Add a different color for links */
+a {
+  color: #6487ac;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
